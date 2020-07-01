@@ -42,7 +42,7 @@ const resume = {
         items: [
             {
                 name: 'resume-react',
-                url: 'https://github.com/jmsalcido/resume',
+                url: 'https://github.com/jmsalcido/resume-react',
                 description: 'A simple resume for developers in react'
             },
         ]

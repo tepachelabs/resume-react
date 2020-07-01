@@ -1,5 +1,14 @@
 Based on [Orbit-Theme](https://github.com/xriley/Orbit-Theme) from **xriley**, please keep the design footer. Mine can be removed. :)
 
+## What do to?
+- Update `developer.js` with your data
+- Update `resume.js` with your cv
+- Update your picture in `public/images`
+
+Just deploy it anywhere!
+
+-----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

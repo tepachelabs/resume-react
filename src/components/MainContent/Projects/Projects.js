@@ -7,7 +7,7 @@ function Projects(props) {
     if (props.header) {
         header = (
             <div className="intro">
-                <ReactMarkdown source={props.header}/>
+                <ReactMarkdown children={props.header}/>
             </div>
         )
     }

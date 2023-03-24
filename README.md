@@ -5,7 +5,7 @@ Based on [Orbit-Theme](https://github.com/xriley/Orbit-Theme) from **xriley**, p
 - Update `resume.js` with your cv
 - Update your picture in `public/images`
 
-Just deploy it anywhere!
+Just deploy it anywhere! See: [DEPLOYMENT](./DEPLOYMENT.md)
 
 -----
 

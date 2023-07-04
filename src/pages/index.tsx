@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>{developer.profile.name} - Resume</title>
+        <title>{`${developer.profile.name} - Resume`}</title>
       </Head>
 
       <div className="Resume">

@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-function Profile(props) {
+interface Props {
+  name: string;
+  tagline: string;
+}
+
+const Profile: FC<Props> = (props) => {
     return (
         <div className="profile-container">
             <img src="/images/developer.png" className="profile" alt="logo" />

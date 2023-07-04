@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-function Education(props) {
+interface Props {
+  education: DeveloperEducation[];
+}
+
+const Education: FC<Props> = (props) => {
 
     const educationItem = (item, index) => {
         return (
@@ -15,7 +19,7 @@ function Education(props) {
     return (
         <div className="education-container container-block">
             <h2 className="container-block-title">Education</h2>
-            {props.educationItems.map(educationItem)}
+            {props.education.map(educationItem)}
         </div>
     )
 }

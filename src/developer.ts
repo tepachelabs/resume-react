@@ -1,4 +1,4 @@
-const developer = {
+const developer: Developer = {
     profile: {
         name: 'Developer Name',
         tagline: 'Full Stack Developer'

@@ -1,10 +1,9 @@
-import React, { FC } from 'react'
+import React, { useContext } from 'react'
 
-interface Props {
-  education: DeveloperEducation[];
-}
+import DeveloperContext from '../../../context/DeveloperContext';
 
-const Education: FC<Props> = (props) => {
+const Education = () => {
+  const { education } = useContext(DeveloperContext);
 
     const educationItem = (item, index) => {
         return (
@@ -19,7 +18,7 @@ const Education: FC<Props> = (props) => {
     return (
         <div className="education-container container-block">
             <h2 className="container-block-title">Education</h2>
-            {props.education.map(educationItem)}
+            {education.map(educationItem)}
         </div>
     )
 }

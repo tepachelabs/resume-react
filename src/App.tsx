@@ -6,26 +6,23 @@ import MainContent from './components/MainContent/MainContent';
 import developer from './developer'
 import resume from './resume'
 
+// ** Context
+import DeveloperContext from './context/DeveloperContext';
+import ResumeContext from './context/ResumeContext';
+
 function App() {
   return (
-    <div className="Resume">
-      <div className="Resume wrapper">
-      <Sidebar
-        profile={developer.profile}
-        contact={developer.contact}
-        education={developer.education}
-        languages={developer.languages}
-        interests={developer.interests}
-      />
-      <MainContent
-        summary={resume.summary}
-        experience={resume.experiences}
-        projects={resume.projects}
-        skills={resume.skills}
-      />
-      </div>
-      <Footer />
-    </div>
+    <DeveloperContext.Provider value={developer}>
+      <ResumeContext.Provider value={resume}>
+        <div className="Resume">
+          <div className="Resume wrapper">
+            <Sidebar />
+            <MainContent />
+          </div>
+          <Footer />
+        </div>
+      </ResumeContext.Provider>
+    </DeveloperContext.Provider>
   );
 }
 

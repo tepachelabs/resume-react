@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-function Experience(props) {
+import ResumeContext from '../../../context/ResumeContext';
+
+function Experience() {
+    const { experiences } = useContext(ResumeContext);
+
 
     const technologies =  (item) => {
         if (!item.technologies) {
@@ -18,7 +22,7 @@ function Experience(props) {
         )
     }
 
-    const experienceItem = (item,index) => {
+    const experienceItem = (item: Experience, index: number) => {
         return (
             <div key={index} className="item">
                 <div className="meta">
@@ -30,7 +34,6 @@ function Experience(props) {
                 </div>
                 <div className="details">
                     <ReactMarkdown children={item.description} />
-                    {item.description_extra ? <ReactMarkdown children={item.description_extra} /> : null}
                     {technologies(item)}
                 </div>
             </div>
@@ -40,7 +43,7 @@ function Experience(props) {
     return (
         <section className="section experiences-section">
             <h2 className="section-title"><span className="icon-holder"><i className="fas fa-briefcase"></i></span>Experiences</h2>
-            {props.experienceItems ? props.experienceItems.map(experienceItem) : null}
+            {experiences.map(experienceItem)}
         </section>
     )
 }

@@ -1,16 +1,15 @@
-import React, { FC } from 'react'
+import React, { useContext } from 'react'
 
-interface Props {
-  name: string;
-  tagline: string;
-}
+import DeveloperContext from '../../../context/DeveloperContext';
 
-const Profile: FC<Props> = (props) => {
+const Profile = () => {
+    const { profile } = useContext(DeveloperContext);
+
     return (
         <div className="profile-container">
             <img src="/images/developer.png" className="profile" alt="logo" />
-            <h1 className="name">{props.name}</h1>
-            <h3 className="tagline">{props.tagline}</h3>
+            <h1 className="name">{profile.name}</h1>
+            <h3 className="tagline">{profile.tagline}</h3>
         </div>
     )
 }

@@ -1,15 +1,16 @@
-import React, { FC } from 'react'
+import React, { useContext } from 'react'
 
-interface Props {
-  interests: Developer['interests'];
-}
+import DeveloperContext from '../../../context/DeveloperContext';
 
-const Interests: FC<Props> = (props) =>{
+
+const Interests = () => {
+    const { interests } = useContext(DeveloperContext);
+
     return (
         <div className="interests-container container-block">
             <h2 className="container-block-title">Interests</h2>
             <ul className="list-unstyled interests-list">
-                {props.interests.map((item,index) => (<li key={index}>{item}</li>))}
+                {interests.map((item,index) => (<li key={index}>{item}</li>))}
             </ul>
         </div>
     )

@@ -1,4 +1,4 @@
-const resume = {
+const resume: Resume = {
     summary: 'Lorem ipsum dolor sit amet, consectetur **adipiscing** elit. Sed dapibus hendrerit fringilla. Nam sit amet felis vel velit aliquam rhoncus porttitor eu erat. Aenean volutpat porttitor hendrerit. Cras sodales magna lobortis mauris accumsan, non efficitur ligula varius. Sed tellus eros, iaculis non tempus ac, porttitor id velit. Vivamus felis mauris, pretium mollis turpis sit amet, vulputate vestibulum purus. Nulla ac eleifend nulla. Curabitur vitae velit ante.',
     experiences: [
         {

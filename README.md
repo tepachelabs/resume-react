@@ -2,7 +2,7 @@ Based on [Orbit-Theme](https://github.com/xriley/Orbit-Theme) from **xriley**, p
 
 ## What do to?
 - Update `developer.ts` with your data
-- Update `resume.js` with your cv
+- Update `resume.ts` with your cv
 - Update your picture in `public/images`
 
 Just deploy it anywhere! See: [DEPLOYMENT](./DEPLOYMENT.md)

@@ -16,7 +16,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +38,11 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-next": "^13.4.10",
+    "eslint-plugin-adonis": "^2.1.1",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "husky": "^8.0.3",
     "typescript": "^5.1.6"
   }
 }

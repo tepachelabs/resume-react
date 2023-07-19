@@ -1,16 +1,14 @@
-import React from 'react';
-import './App.css';
-import Sidebar from './components/Sidebar/Sidebar';
-import Footer from './components/Footer/Footer';
-import MainContent from './components/MainContent/MainContent';
+import React from 'react'
+
+import Footer from './components/Footer/Footer'
+import MainContent from './components/MainContent/MainContent'
+import Sidebar from './components/Sidebar/Sidebar'
+import DeveloperContext from './context/DeveloperContext'
+import ResumeContext from './context/ResumeContext'
 import developer from './developer'
 import resume from './resume'
 
-// ** Context
-import DeveloperContext from './context/DeveloperContext';
-import ResumeContext from './context/ResumeContext';
-
-function App() {
+function App () {
   return (
     <DeveloperContext.Provider value={developer}>
       <ResumeContext.Provider value={resume}>
@@ -23,7 +21,7 @@ function App() {
         </div>
       </ResumeContext.Provider>
     </DeveloperContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import DeveloperContext from '../../../context/DeveloperContext';
+import DeveloperContext from '../../../context/DeveloperContext'
 
 const languageItem = (item: DeveloperLanguage, index) => {
   return (
@@ -9,16 +9,16 @@ const languageItem = (item: DeveloperLanguage, index) => {
 }
 
 const Languages = () => {
-  const { languages } = useContext(DeveloperContext);
+  const { languages } = useContext(DeveloperContext)
 
-    return (
-        <div className="languages-container container-block">
-            <h2 className="container-block-title">Languages</h2>
-            <ul className="list-unstyled interests-list">
-                {languages.map(languageItem)}
-            </ul>
-        </div>
-    )
+  return (
+    <div className="languages-container container-block">
+      <h2 className="container-block-title">Languages</h2>
+      <ul className="list-unstyled interests-list">
+        {languages.map(languageItem)}
+      </ul>
+    </div>
+  )
 }
 
 export default Languages

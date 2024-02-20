@@ -1,6 +1,8 @@
+'use client'
+
 import React, { useContext } from 'react'
 
-import ResumeContext from '../../../context/ResumeContext'
+import ResumeContext from '@/context/ResumeContext'
 
 function Skills () {
   const { skills } = useContext(ResumeContext)

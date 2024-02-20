@@ -1,3 +1,5 @@
+'use client'
+
 const developer: Developer = {
   profile: {
     name: 'Developer Name',

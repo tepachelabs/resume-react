@@ -1,11 +1,13 @@
+'use client'
+
 import React, { useContext } from 'react'
 
-import DeveloperContext from '../../../context/DeveloperContext'
+import DeveloperContext from '@/context/DeveloperContext'
 
 const Education = () => {
   const { education } = useContext(DeveloperContext)
 
-  const educationItem = (item, index) => {
+  const educationItem = (item: DeveloperEducation, index: number) => {
     return (
       <div key={index} className="item">
         <h4 className="degree">{item.degree}</h4>

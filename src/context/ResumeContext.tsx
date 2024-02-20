@@ -1,6 +1,8 @@
+'use client'
+
 import { createContext } from 'react'
 
-import resume from '../resume'
+import resume from '@/data/resume'
 
 const ResumeContext = createContext<Resume>(resume)
 

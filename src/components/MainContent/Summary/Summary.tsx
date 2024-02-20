@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useContext } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-import ResumeContext from '../../../context/ResumeContext'
+import ResumeContext from '@/context/ResumeContext'
 
 function Summary () {
   const { summary } = useContext(ResumeContext)

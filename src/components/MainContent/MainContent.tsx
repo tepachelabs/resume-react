@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react'
 
-import Experience from './Experience/Experience'
-import Projects from './Projects/Projects'
-import Skills from './Skills/Skills'
-import Summary from './Summary/Summary'
+import Experience from '@/components/MainContent/Experience/Experience'
+import Projects from '@/components/MainContent/Projects/Projects'
+import Skills from '@/components/MainContent/Skills/Skills'
+import Summary from '@/components/MainContent/Summary/Summary'
 
 function MainContent () {
   return (

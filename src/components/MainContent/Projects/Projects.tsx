@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useContext, ReactNode } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-import ResumeContext from '../../../context/ResumeContext'
+import ResumeContext from '@/context/ResumeContext'
 
 function Projects () {
   const { projects } = useContext(ResumeContext)

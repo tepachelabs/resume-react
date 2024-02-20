@@ -1,13 +1,15 @@
+'use client'
+
 import Img from 'next/image'
 import React, { useContext } from 'react'
 
-import DeveloperContext from '../../../context/DeveloperContext'
+import DeveloperContext from '@/context/DeveloperContext'
 
 const Profile = () => {
   const { profile } = useContext(DeveloperContext)
 
   return (
-    <div className="profile-container">
+    <div className="profile-container flex flex-col items-center">
       <Img
         className="profile"
         alt="logo"

@@ -1,12 +1,14 @@
+'use client'
+
 import React, { useContext } from 'react'
 import ReactMarkdown from 'react-markdown'
 
-import ResumeContext from '../../../context/ResumeContext'
+import ResumeContext from '@/context/ResumeContext'
 
 function Experience () {
   const { experiences } = useContext(ResumeContext)
 
-  const technologies = (item) => {
+  const technologies = (item: Experience) => {
     if (!item.technologies) {
       return null
     }

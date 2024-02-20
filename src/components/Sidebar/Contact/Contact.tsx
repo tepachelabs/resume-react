@@ -1,6 +1,8 @@
+'use client'
+
 import React, { useContext } from 'react'
 
-import DeveloperContext from '../../../context/DeveloperContext'
+import DeveloperContext from '@/context/DeveloperContext'
 
 const listItem = (name: string, faClass: string, href: string, blank: boolean, text = '', prop?: string) => {
   if (prop) {
@@ -19,7 +21,7 @@ const listItem = (name: string, faClass: string, href: string, blank: boolean, t
   }
 }
 
-const Contact = (props) => {
+const Contact = () => {
   const { contact } = useContext(DeveloperContext)
 
   const { email, github, linkedin, phone, twitter, website} = contact

@@ -1,6 +1,8 @@
+'use client'
+
 import React, { useContext } from 'react'
 
-import DeveloperContext from '../../../context/DeveloperContext'
+import DeveloperContext from '@/context/DeveloperContext'
 
 const Interests = () => {
   const { interests } = useContext(DeveloperContext)
